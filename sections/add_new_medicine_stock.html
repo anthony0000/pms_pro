@@ -1,0 +1,46 @@
+<form action="#" method="post" id="add_stock">
+    <div class="row">
+        <div class="col-md-6 form-group">
+            <select type="text" required class="form-control" id="loadStockData"></select>
+            <input type="hidden" id="name_drug" name="name_drug" required class="form-control">
+        </div>
+    
+        <div class="col-md-6 form-group">
+            <input type="text" name="batch_id" required class="form-control" placeholder="Packing e.g. 10 TAB / 100 ML">
+        </div>
+    
+        <div class="col-md-6 form-group">
+            <input type="date" name="exp_date" required  autofill="off" autocomplete="off" class="form-control" id="exp_date" placeholder="Expiry Date">
+        </div>
+
+        <div class="col-md-6 form-group">
+            <input type="number" name="mrp" required  autofill="off" autocomplete="off" class="form-control" placeholder="MRP">
+        </div>
+
+        <div class="col-md-4 form-group">
+            <input type="number" id="rateStock" name="rate" required  autofill="off" autocomplete="off" class="form-control" placeholder="Rate/Price">
+        </div>
+
+        <div class="col-md-4 form-group">
+            <input name="qty" id="qtyStock" autofill="off" autocomplete="off" placeholder="Quantity" class="form-control" required />
+        </div>
+
+        <div class="col-md-4 form-group">
+            <input id="totalStock" type="number" readonly name="total" required  autofill="off" autocomplete="off" class="form-control" placeholder="Total">
+        </div>
+    </div>
+    <div class="col-md-5 font-weight-bold" style="color: green;cursor:pointer" onclick="document.getElementById('add_new_supplier_model').style.display = 'block';">
+        <i class="fa fa-plus"></i>Add New Supplier
+    </div>
+    <hr>
+    
+    <!-- new user button -->
+    <div class="row col col-md-12">
+        <div class="form-group m-auto">
+            <button class="btn btn-primary" type="submit">ADD</button>
+        </div>
+    </div>
+</form>
+<!-- customer details content end -->
+<!-- result message -->
+<div id="medicine_acknowledgement" class="col-md-12 h5 text-success font-weight-bold text-center" style="font-family: sans-serif;"></div>

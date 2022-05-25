@@ -1,0 +1,266 @@
+html,
+body {
+    height: 100vh;
+    font-family: century gothic !important;
+}
+button,input,textarea{
+    box-shadow: none !important;
+    outline: none !important;
+}
+.container-fluid {
+    margin-left: 15%;
+    width: 85%;
+    background: #f1f3f6;
+    padding: 1px 0 0 0;
+    flex: 1 0 auto;
+}
+
+.container {
+    margin: 0;
+    max-width: 98%;
+    margin: 1%;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.user_options button {
+    max-width: 50px;
+    max-height: 50px;
+    font-size: 36px;
+    background-color: #ffffff;
+    color: #ff5252;
+    border: none;
+    outline: none;
+}
+
+.user_options button>i:hover {
+    animation-name: rotate_wheel;
+    animation-duration: 2s;
+}
+
+@keyframes rotate_wheel {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.user_options button:focus {
+    color: #02b6ff;
+}
+
+#mark {
+    display: none;
+    position: fixed;
+    transform: translate(40px, -24px);
+}
+
+.user_options .options {
+    position: fixed;
+    right: 1%;
+    top: 12%;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 0px 8px 13px 0px rgba(0, 0, 0, 0.164);
+}
+
+.options li {
+    margin: 15px;
+}
+
+.options li > a {
+    color: #111111;
+    text-decoration: none;
+}
+
+.options li>a>span {
+    margin-left: 10px;
+}
+
+.options a:hover {
+    color: #111111;
+}
+
+.options a:focus {
+    color: #02b6ff;
+}
+hr{
+    border-top: 1px solid rgba(122, 120, 120, 0.219) !important;
+}
+.dashboard-stats {
+    background-color: transparent;
+    margin: 2%;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0px 3px 15px 0px rgba(20, 28, 39, 0.151);
+    transition: all .3s ease;
+    border: solid 1px transparent;
+    position: relative;
+    overflow: hidden;
+}
+.dashboard-stats.taller {
+    min-height: 150px;
+    text-align: center;
+    padding-top: 18%;
+}
+.dashboard-stats:hover{
+    border: solid 1px #ccc;
+}
+/* for green dashboard */
+.dashboard-stats.green{
+    background: #4f774f;
+}
+.dashboard-stats.green a div{
+    color: #d3d3d3;
+}
+.dashboard-stats.green span{
+    color: #d3d3d3;
+    font-size: 16px;
+}
+.dashboard-stats.green .icon-large{
+    color: #d3d3d3;
+}
+/* for blue dashboard */
+.dashboard-stats.blue{
+    background: #4f5a77;
+}
+.dashboard-stats.blue a div{
+    color: #d3d3d3;
+}
+.dashboard-stats.blue span{
+    color: #d3d3d3;
+    font-size: 16px;
+}
+.dashboard-stats.blue .icon-large{
+    color: #d3d3d3;
+}
+/* for purple dashboard */
+.dashboard-stats.purple{
+    background: #774f72;
+}
+.dashboard-stats.purple a div{
+    color: #d3d3d3;
+}
+.dashboard-stats.purple span{
+    color: #d3d3d3;
+    font-size: 16px;
+}
+.dashboard-stats.purple .icon-large{
+    color: #d3d3d3;
+}
+.dashboard-stats.taller .icon-large {
+    position: absolute;
+    font-size: 100px;
+    right: -40px;
+    top: 10px;
+    z-index: 0;
+}
+.dashboard-stats.taller .icon-large2 {
+    position: absolute;
+    font-size: 100px;
+    right: 0px;
+    top: 10px;
+    z-index: 0;
+}
+.dashboard-stats div span{
+    color: #555;
+}
+.dashboard-stats .h5{
+    color: #555;
+    font-size: 16px;
+}
+.dashboard-stats .small{
+    font-size: 16px !important;
+}
+.todays-report {
+    margin: 2.1% 0;
+    padding: 5%;
+    border: 1px solid #ccc;
+}
+
+#add_new_customer_model,
+#add_new_supplier_model,
+#add_new_medicine_model {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal-dialog {
+    position: fixed;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f3f6;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ff5252;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* button changes */
+.btn{
+    border-radius: 0px;
+    font-size: 14px;
+    transition: all .3s ease;
+    background: #111111;
+    border: 0px;
+    color: #ccc;
+}
+.btn:hover{
+    background: #fff;
+    color: #111111;
+    box-shadow: 0px 8px 13px rgba(0, 0, 0, 0.226) !important;
+}
+.modal-header{
+    background: #111111 !important;
+}
+.modal-header button i{
+    color: #fff !important;
+}
+.form-control{
+    border-radius: 0px;
+    font-size: 15px;
+    border: 0px;
+    background: #fff;
+    box-shadow: 0px 2px 13px rgba(0, 0, 0, 0.164) !important;
+}
+.form-control:disabled, .form-control[readonly]{
+    box-shadow: none !important;
+}
+.user_options button i{
+    color: #111111;
+}
